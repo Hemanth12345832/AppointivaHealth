@@ -17,20 +17,6 @@
         android:usesCleartextTraffic="true"
         android:theme="@style/Theme.AppointivaHealth">
 
-        <!-- Razorpay requires explicit exported flag on Android 12+ -->
-        <receiver
-            android:name="com.razorpay.RzpTokenReceiver"
-            android:exported="false"
-            tools:replace="android:exported" />
-
-        <!-- Razorpay Checkout -->
-        <activity
-            android:name="com.razorpay.CheckoutActivity"
-            android:exported="false"
-            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
-            android:screenOrientation="portrait"
-            tools:replace="android:configChanges" />
-
         <!-- Replace MainActivity with SplashActivity as Launcher -->
         <activity
             android:name=".activities.SplashActivity"

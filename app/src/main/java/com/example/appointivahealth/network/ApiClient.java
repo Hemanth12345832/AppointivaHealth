@@ -27,14 +27,6 @@ public class ApiClient {
         return context.getString(R.string.api_base_url).trim();
     }
 
-    public static void createRazorpayOrder(Context context, JSONObject payload, JsonCallback callback) {
-        post(context, "/api/payment/create-order", payload, callback);
-    }
-
-    public static void verifyRazorpayPayment(Context context, JSONObject payload, JsonCallback callback) {
-        post(context, "/api/payment/verify-payment", payload, callback);
-    }
-
     public static void notifyAppointmentCancelled(Context context, JSONObject payload, JsonCallback callback) {
         post(context, "/api/notifications/appointment-cancelled", payload, callback);
     }

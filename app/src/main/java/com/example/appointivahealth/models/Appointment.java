@@ -18,10 +18,6 @@ public class Appointment implements Serializable {
     private boolean adminVerified;
     private String transactionId;
     private String amount;
-    // Razorpay fields (persisted for audit/verification)
-    private String orderId;
-    private String paymentId;
-    private String paymentSignature;
     private String reminderSentAt; // ISO timestamp when 1-hour reminder was sent
     private String cancellationMessage;
     
@@ -45,9 +41,6 @@ public class Appointment implements Serializable {
         this.adminVerified = false;
         this.transactionId = "";
         this.amount = "";
-        this.orderId = "";
-        this.paymentId = "";
-        this.paymentSignature = "";
         this.reminderSentAt = "";
         this.cancellationMessage = "";
     }
@@ -96,15 +89,6 @@ public class Appointment implements Serializable {
 
     public String getAmount() { return amount; }
     public void setAmount(String amount) { this.amount = amount; }
-
-    public String getOrderId() { return orderId; }
-    public void setOrderId(String orderId) { this.orderId = orderId; }
-
-    public String getPaymentId() { return paymentId; }
-    public void setPaymentId(String paymentId) { this.paymentId = paymentId; }
-
-    public String getPaymentSignature() { return paymentSignature; }
-    public void setPaymentSignature(String paymentSignature) { this.paymentSignature = paymentSignature; }
 
     public String getReminderSentAt() { return reminderSentAt; }
     public void setReminderSentAt(String reminderSentAt) { this.reminderSentAt = reminderSentAt; }
