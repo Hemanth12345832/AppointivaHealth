@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "107679471446",
+    "project_id": "appointiva-health-4f5d0",
+    "storage_bucket": "appointiva-health-4f5d0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107679471446:android:3e5a2b7d37490539d3a8f7",
+        "android_client_info": {
+          "package_name": "com.example.appointivahealth"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFQLn-lcreJWWcelM8b-qDs6Riq3juGH0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

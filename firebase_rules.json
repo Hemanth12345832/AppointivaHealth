@@ -1,0 +1,24 @@
+{
+  "rules": {
+    "Users": {
+      ".read": "auth != null",
+      "$uid": {
+        ".write": "$uid === auth.uid || root.child('Users').child(auth.uid).child('role').val() === 'Admin'"
+      }
+    },
+    "Appointments": {
+      ".read": "auth != null",
+      ".write": "auth != null"
+    },
+    "MedicalRecords": {
+      ".read": "auth != null",
+      ".write": "auth != null"
+    },
+    "Availability": {
+      ".read": "auth != null",
+      "$doctorId": {
+        ".write": "$doctorId === auth.uid"
+      }
+    }
+  }
+}

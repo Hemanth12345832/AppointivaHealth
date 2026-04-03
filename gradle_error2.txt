@@ -1,0 +1,121 @@
+﻿> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:processDebugGoogleServices UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:processDebugNavigationResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:generateDebugRFile UP-TO-DATE
+> Task :app:compileDebugKotlin NO-SOURCE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+
+> Task :app:compileDebugJavaWithJavac FAILED
+./gradlew : D:\appoi
+ntivahealth\app\src\
+main\java\com\exampl
+e\appointivahealth\a
+ctivities\RegisterAc
+tivity.java:191: 
+error: local 
+variables 
+referenced from a 
+lambda expression 
+must be final or 
+effectively final
+At line:1 char:1
++ ./gradlew 
+assembleDebug 2>&1 
+| Out-File 
+-FilePath 
+gradle_error2.txt - 
+...
++ ~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~
+    + CategoryInfo  
+            : NotS  
+  pecified: (D:\a   
+ ppointivahe...f    
+ectively final:    
+String) [], Rem    
+oteException
+    + FullyQualifie 
+   dErrorId : Nati  
+  veCommandError
+ 
+                    
+    user.setGender(g
+ender);
+                    
+                   ^
+Note: Some input 
+files use or 
+override a 
+deprecated API.
+Note: Recompile 
+with 
+-Xlint:deprecation 
+for details.
+1 error
+
+[Incubating] Problems report is available at: file:///D:/appointivahealth/build/reports/problems/problems-report.html
+
+FAILURE: Build 
+failed with an 
+exception.
+
+* What went wrong:
+Execution failed 
+for task ':app:compi
+leDebugJavaWithJavac
+'.
+> Compilation 
+failed; see the 
+compiler output 
+below.
+  D:\appointivahealt
+h\app\src\main\java\
+com\example\appointi
+vahealth\activities\
+RegisterActivity.jav
+a:191: error: local 
+variables 
+referenced from a 
+lambda expression 
+must be final or 
+effectively final
+                    
+      user.setGender
+(gender);
+                    
+                    
+ ^
+  Note: Recompile 
+with 
+-Xlint:deprecation 
+for details.
+  Note: Some input 
+files use or 
+override a 
+deprecated API.
+  1 error
+
+* Try:
+> Check your code 
+and dependencies to 
+fix the compilation 
+error(s)
+> Run with --scan 
+to get full 
+insights from a 
+Build Scan (powered 
+by Develocity).
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 3s
+8 actionable tasks: 1 executed, 7 up-to-date

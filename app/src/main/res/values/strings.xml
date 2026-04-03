@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Appointiva Health</string>
+    <!-- Backend base URL for Razorpay, notifications, and symptom checker. -->
+    <!-- Update this to your deployed server URL. -->
+    <string name="api_base_url">http://192.168.0.101:4000</string>
+
+    <!-- Razorpay Key ID (public). Keep empty to auto-fallback to mock payments. -->
+    <string name="razorpay_key_id"></string>
+
+    <string name="razorpay_currency">INR</string>
+
+    <string-array name="roles_array">
+        <item>Patient</item>
+        <item>Doctor</item>
+        <item>Admin</item>
+    </string-array>
+    
+    <string-array name="register_roles_array">
+        <item>Patient</item>
+        <item>Doctor</item>
+    </string-array>
+</resources>

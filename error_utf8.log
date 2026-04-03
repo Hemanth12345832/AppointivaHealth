@@ -1,0 +1,717 @@
+﻿> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:processDebugGoogleServices UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:processDebugNavigationResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:generateDebugRFile UP-TO-DATE
+> Task :app:compileDebugKotlin NO-SOURCE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+
+> Task :app:compileDebugJavaWithJavac FAILED
+.\gradlew : D:\appoi
+ntivahealth\app\src\
+main\java\com\exampl
+e\appointivahealth\a
+ctivities\DoctorAppo
+intmentDetailsActivi
+ty.java:40: error: 
+cannot find symbol
+At line:1 char:1
++ .\gradlew compileD
+ebugJavaWithJavac 
+--console=plain > 
+error.log 2>&1
++ ~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~
+    + CategoryInfo  
+            : NotS  
+  pecified: (D:\a   
+ ppointivahe...n    
+ot find symbol:    
+String) [], Rem    
+oteException
+    + FullyQualifie 
+   dErrorId : Nati  
+  veCommandError
+ 
+        tvDetailsPat
+ientName = findViewB
+yId(R.id.tvDetailsPa
+tientName);
+        ^
+  symbol:   
+variable 
+tvDetailsPatientName
+  location: class Do
+ctorAppointmentDetai
+lsActivity
+D:\appointivahealth\
+app\src\main\java\co
+m\example\appointiva
+health\activities\Do
+ctorAppointmentDetai
+lsActivity.java:41: 
+error: cannot find 
+symbol
+        
+tvDetailsDateTime = 
+findViewById(R.id.tv
+DetailsDateTime);
+        ^
+  symbol:   
+variable 
+tvDetailsDateTime
+  location: class Do
+ctorAppointmentDetai
+lsActivity
+D:\appointivahealth\
+app\src\main\java\co
+m\example\appointiva
+health\activities\Do
+ctorAppointmentDetai
+lsActivity.java:42: 
+error: cannot find 
+symbol
+        
+tvDetailsStatus = fi
+ndViewById(R.id.tvDe
+tailsStatus);
+        ^
+  symbol:   
+variable 
+tvDetailsStatus
+  location: class Do
+ctorAppointmentDetai
+lsActivity
+D:\appointivahealth\
+app\src\main\java\co
+m\example\appointiva
+health\activities\Do
+ctorAppointmentDetai
+lsActivity.java:43: 
+error: cannot find 
+symbol
+        
+btnOpenChatDoctor = 
+findViewById(R.id.bt
+nOpenChatDoctor);
+        ^
+  symbol:   
+variable 
+btnOpenChatDoctor
+  location: class Do
+ctorAppointmentDetai
+lsActivity
+D:\appointivahealth\
+app\src\main\java\co
+m\example\appointiva
+health\activities\Do
+ctorAppointmentDetai
+lsActivity.java:43: 
+error: cannot find 
+symbol
+        
+btnOpenChatDoctor = 
+findViewById(R.id.bt
+nOpenChatDoctor);
+                    
+                    
+     ^
+  symbol:   
+variable 
+btnOpenChatDoctor
+  location: class id
+D:\appointivahealth\
+app\src\main\java\co
+m\example\appointiva
+health\activities\Do
+ctorAppointmentDetai
+lsActivity.java:52: 
+error: cannot find 
+symbol
+        btnOpenChatD
+octor.setOnClickList
+ener(v -> {
+        ^
+  symbol:   
+variable 
+btnOpenChatDoctor
+  location: class Do
+ctorAppointmentDetai
+lsActivity
+D:\appointivahealth\
+app\src\main\java\co
+m\example\appointiva
+health\activities\Do
+ctorAppointmentDetai
+lsActivity.java:64: 
+error: cannot find 
+symbol
+        
+DatabaseReference 
+apptRef = FirebaseDa
+tabase.getInstance()
+.getReference("Appoi
+ntments").child(appo
+intmentId);
+        ^
+  symbol:   class 
+DatabaseReference
+  location: class Do
+ctorAppointmentDetai
+lsActivity
+D:\appointivahealth\
+app\src\main\java\co
+m\example\appointiva
+health\activities\Do
+ctorAppointmentDetai
+lsActivity.java:71: 
+error: cannot find 
+symbol
+                    
+    tvDetailsPatient
+Name.setText("Patien
+t: " + appointment.g
+etPatientName());
+                    
+    ^
+  symbol: variable 
+tvDetailsPatientName
+D:\appointivahealth\
+app\src\main\java\co
+m\example\appointiva
+health\activities\Do
+ctorAppointmentDetai
+lsActivity.java:72: 
+error: cannot find 
+symbol
+                    
+    tvDetailsDateTim
+e.setText("Date: " 
++ appointment.getDat
+e() + " | Time: " + 
+appointment.getTime(
+));
+                    
+    ^
+  symbol: variable 
+tvDetailsDateTime
+D:\appointivahealth\
+app\src\main\java\co
+m\example\appointiva
+health\activities\Do
+ctorAppointmentDetai
+lsActivity.java:73: 
+error: cannot find 
+symbol
+                    
+    tvDetailsStatus.
+setText("Status: " 
++ appointment.getSta
+tus());
+                    
+    ^
+  symbol: variable 
+tvDetailsStatus
+D:\appointivahealth\
+app\src\main\java\co
+m\example\appointiva
+health\activities\Pa
+tientAppointmentDeta
+ilsActivity.java:44:
+ error: cannot find 
+symbol
+        
+btnChatWithDoctor = 
+findViewById(R.id.bt
+nChatWithDoctor);
+        ^
+  symbol:   
+variable 
+btnChatWithDoctor
+  location: class Pa
+tientAppointmentDeta
+ilsActivity
+D:\appointivahealth\
+app\src\main\java\co
+m\example\appointiva
+health\activities\Pa
+tientAppointmentDeta
+ilsActivity.java:44:
+ error: cannot find 
+symbol
+        
+btnChatWithDoctor = 
+findViewById(R.id.bt
+nChatWithDoctor);
+                    
+                    
+     ^
+  symbol:   
+variable 
+btnChatWithDoctor
+  location: class id
+D:\appointivahealth\
+app\src\main\java\co
+m\example\appointiva
+health\activities\Pa
+tientAppointmentDeta
+ilsActivity.java:53:
+ error: cannot find 
+symbol
+        btnChatWithD
+octor.setOnClickList
+ener(v -> {
+        ^
+  symbol:   
+variable 
+btnChatWithDoctor
+  location: class Pa
+tientAppointmentDeta
+ilsActivity
+D:\appointivahealth\
+app\src\main\java\co
+m\example\appointiva
+health\activities\Pa
+tientDashboardActivi
+ty.java:38: error: 
+cannot find symbol
+        
+loadPatientData();
+        ^
+  symbol:   method 
+loadPatientData()
+  location: class Pa
+tientDashboardActivi
+ty
+D:\appointivahealth\
+app\src\main\java\co
+m\example\appointiva
+health\activities\Pa
+tientDashboardActivi
+ty.java:42: error: 
+cannot find symbol
+        cardFindDoct
+or.setOnClickListene
+r(v -> 
+startActivity(new In
+tent(PatientDashboar
+dActivity.this, Find
+DoctorActivity.class
+)));
+                    
+                    
+                    
+                    
+                    
+   ^
+  symbol:   class 
+FindDoctorActivity
+  location: class Pa
+tientDashboardActivi
+ty
+D:\appointivahealth\
+app\src\main\java\co
+m\example\appointiva
+health\activities\Pa
+tientDashboardActivi
+ty.java:44: error: 
+cannot find symbol
+        cardMyAppoin
+tments.setOnClickLis
+tener(v -> 
+startActivity(new In
+tent(PatientDashboar
+dActivity.this, Pati
+entAppointmentsActiv
+ity.class)));
+                    
+                    
+                    
+                    
+                    
+       ^
+  symbol:   class Pa
+tientAppointmentsAct
+ivity
+  location: class Pa
+tientDashboardActivi
+ty
+Note: Some input 
+files use or 
+override a 
+deprecated API.
+Note: Recompile 
+with 
+-Xlint:deprecation 
+for details.
+16 errors
+
+[Incubating] Problems report is available at: file:///D:/appointivahealth/build/reports/problems/problems-report.html
+
+FAILURE: Build 
+failed with an 
+exception.
+
+* What went wrong:
+Execution failed 
+for task ':app:compi
+leDebugJavaWithJavac
+'.
+> Compilation 
+failed; see the 
+compiler output 
+below.
+  Note: Recompile 
+with 
+-Xlint:deprecation 
+for details.
+  D:\appointivahealt
+h\app\src\main\java\
+com\example\appointi
+vahealth\activities\
+DoctorAppointmentDet
+ailsActivity.java:40
+: error: cannot 
+find symbol
+          tvDetailsP
+atientName = findVie
+wById(R.id.tvDetails
+PatientName);
+          ^
+    symbol:   
+variable 
+tvDetailsPatientName
+    location: class 
+DoctorAppointmentDet
+ailsActivity
+  D:\appointivahealt
+h\app\src\main\java\
+com\example\appointi
+vahealth\activities\
+DoctorAppointmentDet
+ailsActivity.java:41
+: error: cannot 
+find symbol
+          
+tvDetailsDateTime = 
+findViewById(R.id.tv
+DetailsDateTime);
+          ^
+    symbol:   
+variable 
+tvDetailsDateTime
+    location: class 
+DoctorAppointmentDet
+ailsActivity
+  D:\appointivahealt
+h\app\src\main\java\
+com\example\appointi
+vahealth\activities\
+DoctorAppointmentDet
+ailsActivity.java:42
+: error: cannot 
+find symbol
+          
+tvDetailsStatus = fi
+ndViewById(R.id.tvDe
+tailsStatus);
+          ^
+    symbol:   
+variable 
+tvDetailsStatus
+    location: class 
+DoctorAppointmentDet
+ailsActivity
+  D:\appointivahealt
+h\app\src\main\java\
+com\example\appointi
+vahealth\activities\
+DoctorAppointmentDet
+ailsActivity.java:43
+: error: cannot 
+find symbol
+          
+btnOpenChatDoctor = 
+findViewById(R.id.bt
+nOpenChatDoctor);
+          ^
+    symbol:   
+variable 
+btnOpenChatDoctor
+    location: class 
+DoctorAppointmentDet
+ailsActivity
+  D:\appointivahealt
+h\app\src\main\java\
+com\example\appointi
+vahealth\activities\
+DoctorAppointmentDet
+ailsActivity.java:43
+: error: cannot 
+find symbol
+          
+btnOpenChatDoctor = 
+findViewById(R.id.bt
+nOpenChatDoctor);
+                    
+                    
+       ^
+    symbol:   
+variable 
+btnOpenChatDoctor
+    location: class 
+id
+  D:\appointivahealt
+h\app\src\main\java\
+com\example\appointi
+vahealth\activities\
+DoctorAppointmentDet
+ailsActivity.java:52
+: error: cannot 
+find symbol
+          btnOpenCha
+tDoctor.setOnClickLi
+stener(v -> {
+          ^
+    symbol:   
+variable 
+btnOpenChatDoctor
+    location: class 
+DoctorAppointmentDet
+ailsActivity
+  D:\appointivahealt
+h\app\src\main\java\
+com\example\appointi
+vahealth\activities\
+DoctorAppointmentDet
+ailsActivity.java:64
+: error: cannot 
+find symbol
+          
+DatabaseReference 
+apptRef = FirebaseDa
+tabase.getInstance()
+.getReference("Appoi
+ntments").child(appo
+intmentId);
+          ^
+    symbol:   class 
+DatabaseReference
+    location: class 
+DoctorAppointmentDet
+ailsActivity
+  D:\appointivahealt
+h\app\src\main\java\
+com\example\appointi
+vahealth\activities\
+PatientAppointmentDe
+tailsActivity.java:4
+4: error: cannot 
+find symbol
+          
+btnChatWithDoctor = 
+findViewById(R.id.bt
+nChatWithDoctor);
+          ^
+    symbol:   
+variable 
+btnChatWithDoctor
+    location: class 
+PatientAppointmentDe
+tailsActivity
+  D:\appointivahealt
+h\app\src\main\java\
+com\example\appointi
+vahealth\activities\
+PatientAppointmentDe
+tailsActivity.java:4
+4: error: cannot 
+find symbol
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+8 actionable tasks: 1 executed, 7 up-to-date
+          
+btnChatWithDoctor = 
+findViewById(R.id.bt
+nChatWithDoctor);
+                    
+                    
+       ^
+    symbol:   
+variable 
+btnChatWithDoctor
+    location: class 
+id
+  D:\appointivahealt
+h\app\src\main\java\
+com\example\appointi
+vahealth\activities\
+PatientAppointmentDe
+tailsActivity.java:5
+3: error: cannot 
+find symbol
+          btnChatWit
+hDoctor.setOnClickLi
+stener(v -> {
+          ^
+    symbol:   
+variable 
+btnChatWithDoctor
+    location: class 
+PatientAppointmentDe
+tailsActivity
+  D:\appointivahealt
+h\app\src\main\java\
+com\example\appointi
+vahealth\activities\
+PatientDashboardActi
+vity.java:42: 
+error: cannot find 
+symbol
+          cardFindDo
+ctor.setOnClickListe
+ner(v -> 
+startActivity(new In
+tent(PatientDashboar
+dActivity.this, Find
+DoctorActivity.class
+)));
+                    
+                    
+                    
+                    
+                    
+     ^
+    symbol:   class 
+FindDoctorActivity
+    location: class 
+PatientDashboardActi
+vity
+  D:\appointivahealt
+h\app\src\main\java\
+com\example\appointi
+vahealth\activities\
+PatientDashboardActi
+vity.java:44: 
+error: cannot find 
+symbol
+          cardMyAppo
+intments.setOnClickL
+istener(v -> 
+startActivity(new In
+tent(PatientDashboar
+dActivity.this, Pati
+entAppointmentsActiv
+ity.class)));
+                    
+                    
+                    
+                    
+                    
+         ^
+    symbol:   class 
+PatientAppointmentsA
+ctivity
+    location: class 
+PatientDashboardActi
+vity
+  Note: Some input 
+files use or 
+override a 
+deprecated API.
+  D:\appointivahealt
+h\app\src\main\java\
+com\example\appointi
+vahealth\activities\
+DoctorAppointmentDet
+ailsActivity.java:71
+: error: cannot 
+find symbol
+                    
+      tvDetailsPatie
+ntName.setText("Pati
+ent: " + appointment
+.getPatientName());
+                    
+      ^
+    symbol: 
+variable 
+tvDetailsPatientName
+  D:\appointivahealt
+h\app\src\main\java\
+com\example\appointi
+vahealth\activities\
+DoctorAppointmentDet
+ailsActivity.java:72
+: error: cannot 
+find symbol
+                    
+      tvDetailsDateT
+ime.setText("Date: 
+" + appointment.getD
+ate() + " | Time: " 
++ appointment.getTim
+e());
+                    
+      ^
+    symbol: 
+variable 
+tvDetailsDateTime
+  D:\appointivahealt
+h\app\src\main\java\
+com\example\appointi
+vahealth\activities\
+DoctorAppointmentDet
+ailsActivity.java:73
+: error: cannot 
+find symbol
+                    
+      tvDetailsStatu
+s.setText("Status: 
+" + appointment.getS
+tatus());
+                    
+      ^
+    symbol: 
+variable 
+tvDetailsStatus
+  D:\appointivahealt
+h\app\src\main\java\
+com\example\appointi
+vahealth\activities\
+PatientDashboardActi
+vity.java:38: 
+error: cannot find 
+symbol
+          
+loadPatientData();
+          ^
+    symbol:   
+method 
+loadPatientData()
+    location: class 
+PatientDashboardActi
+vity
+  16 errors
+
+* Try:
+> Check your code 
+and dependencies to 
+fix the compilation 
+error(s)
+> Run with --scan 
+to get full 
+insights from a 
+Build Scan (powered 
+by Develocity).
+
+BUILD FAILED in 3s

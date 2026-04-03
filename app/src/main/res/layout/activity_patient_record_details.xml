@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header Toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarRecordDetails"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/primary"
+            app:title="Record Details"
+            app:titleTextColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tvPatientNameDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Patient Name"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Consultation Notes / Instructions"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/text_secondary"/>
+
+            <EditText
+                android:id="@+id/etConsultationNotes"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="top|start"
+                android:hint="Type notes here..."
+                android:background="@drawable/edit_text_bg"
+                android:padding="12dp"
+                android:textSize="14sp"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Diagnosis"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/text_secondary"/>
+
+            <EditText
+                android:id="@+id/etDiagnosis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="General Checkup, Fever, etc."
+                android:background="@drawable/edit_text_bg"
+                android:padding="12dp"
+                android:textSize="14sp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Optional: Link to generate prescription here, or add prescription text here. The user requested: add prescription text. I'll add a field. -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prescription"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/text_secondary"/>
+
+            <EditText
+                android:id="@+id/etPrescriptionText"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:gravity="top|start"
+                android:hint="Rx: Paracetamol 500mg (1-1-1)"
+                android:background="@drawable/edit_text_bg"
+                android:padding="12dp"
+                android:textSize="14sp"
+                android:layout_marginBottom="24dp"/>
+            <TextView
+                android:id="@+id/tvDocumentsLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Uploaded Documents"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/text_secondary"/>
+
+            <TextView
+                android:id="@+id/tvNoDocuments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No documents uploaded for this appointment."
+                android:gravity="center"
+                android:padding="16dp"
+                android:visibility="gone"
+                android:layout_marginBottom="16dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvDocuments"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:nestedScrollingEnabled="false"
+                android:layout_marginBottom="24dp"/>
+
+            <Button
+                android:id="@+id/btnSaveRecord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save Record"
+                android:backgroundTint="@color/primary"
+                android:textColor="@color/white"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- As requested, navigate to Prescription Generation PDF from here or separate action -->
+            <Button
+                android:id="@+id/btnGeneratePdf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Generate PDF Prescription"
+                android:backgroundTint="@color/secondary"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

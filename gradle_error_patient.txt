@@ -1,0 +1,324 @@
+﻿> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:processDebugGoogleServices UP-TO-DATE
+
+> Task :app:packageDebugResources FAILED
+./gradlew : ERROR: [
+mipmap-hdpi-v4/ic_la
+uncher] D:\appointiv
+ahealth\app\src\main
+\res\mipmap-hdpi\ic_
+launcher.png [mipmap
+-hdpi-v4/ic_launcher
+] D:\appointivahealt
+h\app\src\main\res\m
+ipmap-hdpi\ic_launch
+er.webp: Resource 
+and asset merger: 
+Duplicate resources
+At line:1 char:1
++ ./gradlew 
+assembleDebug 2>&1 
+| Out-File 
+-FilePath 
+gradle_error_patien 
+...
++ ~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~
+    + CategoryInfo  
+            : NotS  
+  pecified: (ERRO   
+ R: [mipmap-...i    
+cate resources:    
+String) [], Rem    
+oteException
+    + FullyQualifie 
+   dErrorId : Nati  
+  veCommandError
+ 
+ERROR: [mipmap-hdpi-
+v4/ic_launcher_round
+] D:\appointivahealt
+h\app\src\main\res\m
+ipmap-hdpi\ic_launch
+er_round.png [mipmap
+-hdpi-v4/ic_launcher
+_round] D:\appointiv
+ahealth\app\src\main
+\res\mipmap-hdpi\ic_
+launcher_round.webp:
+ Resource and asset 
+merger: Duplicate 
+resources
+ERROR: [mipmap-mdpi-
+v4/ic_launcher] D:\a
+ppointivahealth\app\
+src\main\res\mipmap-
+mdpi\ic_launcher.png
+ [mipmap-mdpi-v4/ic_
+launcher] D:\appoint
+ivahealth\app\src\ma
+in\res\mipmap-mdpi\i
+c_launcher.webp: 
+Resource and asset 
+merger: Duplicate 
+resources
+ERROR: [mipmap-mdpi-
+v4/ic_launcher_round
+] D:\appointivahealt
+h\app\src\main\res\m
+ipmap-mdpi\ic_launch
+er_round.png [mipmap
+-mdpi-v4/ic_launcher
+_round] D:\appointiv
+ahealth\app\src\main
+\res\mipmap-mdpi\ic_
+launcher_round.webp:
+ Resource and asset 
+merger: Duplicate 
+resources
+ERROR: [mipmap-xhdpi
+-v4/ic_launcher] D:\
+appointivahealth\app
+\src\main\res\mipmap
+-xhdpi\ic_launcher.p
+ng [mipmap-xhdpi-v4/
+ic_launcher] D:\appo
+intivahealth\app\src
+\main\res\mipmap-xhd
+pi\ic_launcher.webp:
+ Resource and asset 
+merger: Duplicate 
+resources
+ERROR: [mipmap-xhdpi
+-v4/ic_launcher_roun
+d] D:\appointivaheal
+th\app\src\main\res\
+mipmap-xhdpi\ic_laun
+cher_round.png [mipm
+ap-xhdpi-v4/ic_launc
+her_round] D:\appoin
+tivahealth\app\src\m
+ain\res\mipmap-xhdpi
+\ic_launcher_round.w
+ebp: Resource and 
+asset merger: 
+Duplicate resources
+ERROR: [mipmap-xxhdp
+i-v4/ic_launcher] D:
+\appointivahealth\ap
+p\src\main\res\mipma
+p-xxhdpi\ic_launcher
+.png [mipmap-xxhdpi-
+v4/ic_launcher] D:\a
+ppointivahealth\app\
+src\main\res\mipmap-
+xxhdpi\ic_launcher.w
+ebp: Resource and 
+asset merger: 
+Duplicate resources
+ERROR: [mipmap-xxhdp
+i-v4/ic_launcher_rou
+nd] D:\appointivahea
+lth\app\src\main\res
+\mipmap-xxhdpi\ic_la
+uncher_round.png [mi
+pmap-xxhdpi-v4/ic_la
+uncher_round] D:\app
+ointivahealth\app\sr
+c\main\res\mipmap-xx
+hdpi\ic_launcher_rou
+nd.webp: Resource 
+and asset merger: 
+Duplicate resources
+ERROR: [mipmap-xxxhd
+pi-v4/ic_launcher] D
+:\appointivahealth\a
+pp\src\main\res\mipm
+ap-xxxhdpi\ic_launch
+er.png [mipmap-xxxhd
+pi-v4/ic_launcher] D
+:\appointivahealth\a
+pp\src\main\res\mipm
+ap-xxxhdpi\ic_launch
+er.webp: Resource 
+and asset merger: 
+Duplicate resources
+ERROR: [mipmap-xxxhd
+pi-v4/ic_launcher_ro
+und] D:\appointivahe
+alth\app\src\main\re
+s\mipmap-xxxhdpi\ic_
+launcher_round.png [
+mipmap-xxxhdpi-v4/ic
+_launcher_round] D:\
+appointivahealth\app
+\src\main\res\mipmap
+-xxxhdpi\ic_launcher
+_round.webp: 
+Resource and asset 
+merger: Duplicate 
+resources
+
+[Incubating] Problems report is available at: file:///D:/appointivahealth/build/reports/problems/problems-report.html
+
+FAILURE: Build 
+failed with an 
+exception.
+
+* What went wrong:
+Execution failed 
+for task ':app:packa
+geDebugResources'.
+> [mipmap-hdpi-v4/ic
+_launcher] D:\appoin
+tivahealth\app\src\m
+ain\res\mipmap-hdpi\
+ic_launcher.png	[mip
+map-hdpi-v4/ic_launc
+her] D:\appointivahe
+alth\app\src\main\re
+s\mipmap-hdpi\ic_lau
+ncher.webp: Error: 
+Duplicate resources
+  [mipmap-hdpi-v4/ic
+_launcher_round] D:\
+appointivahealth\app
+\src\main\res\mipmap
+-hdpi\ic_launcher_ro
+und.png	[mipmap-hdpi
+-v4/ic_launcher_roun
+d] D:\appointivaheal
+th\app\src\main\res\
+mipmap-hdpi\ic_launc
+her_round.webp: 
+Error: Duplicate 
+resources
+  [mipmap-mdpi-v4/ic
+_launcher] D:\appoin
+tivahealth\app\src\m
+ain\res\mipmap-mdpi\
+ic_launcher.png	[mip
+map-mdpi-v4/ic_launc
+her] D:\appointivahe
+alth\app\src\main\re
+s\mipmap-mdpi\ic_lau
+ncher.webp: Error: 
+Duplicate resources
+  [mipmap-mdpi-v4/ic
+_launcher_round] D:\
+appointivahealth\app
+\src\main\res\mipmap
+-mdpi\ic_launcher_ro
+und.png	[mipmap-mdpi
+-v4/ic_launcher_roun
+d] D:\appointivaheal
+th\app\src\main\res\
+mipmap-mdpi\ic_launc
+her_round.webp: 
+Error: Duplicate 
+resources
+  [mipmap-xhdpi-v4/i
+c_launcher] D:\appoi
+ntivahealth\app\src\
+main\res\mipmap-xhdp
+i\ic_launcher.png	[m
+ipmap-xhdpi-v4/ic_la
+uncher] D:\appointiv
+ahealth\app\src\main
+\res\mipmap-xhdpi\ic
+_launcher.webp: 
+Error: Duplicate 
+resources
+  [mipmap-xhdpi-v4/i
+c_launcher_round] D:
+\appointivahealth\ap
+p\src\main\res\mipma
+p-xhdpi\ic_launcher_
+round.png	[mipmap-xh
+dpi-v4/ic_launcher_r
+ound] D:\appointivah
+ealth\app\src\main\r
+es\mipmap-xhdpi\ic_l
+auncher_round.webp: 
+Error: Duplicate 
+resources
+  [mipmap-xxhdpi-v4/
+ic_launcher] D:\appo
+intivahealth\app\src
+\main\res\mipmap-xxh
+dpi\ic_launcher.png	
+[mipmap-xxhdpi-v4/ic
+_launcher] D:\appoin
+tivahealth\app\src\m
+ain\res\mipmap-xxhdp
+i\ic_launcher.webp: 
+Error: Duplicate 
+resources
+  [mipmap-xxhdpi-v4/
+ic_launcher_round] D
+:\appointivahealth\a
+pp\src\main\res\mipm
+ap-xxhdpi\ic_launche
+r_round.png	[mipmap-
+xxhdpi-v4/ic_launche
+r_round] D:\appointi
+vahealth\app\src\mai
+n\res\mipmap-xxhdpi\
+ic_launcher_round.we
+bp: Error: 
+Duplicate resources
+  [mipmap-xxxhdpi-v4
+/ic_launcher] D:\app
+ointivahealth\app\sr
+c\main\res\mipmap-xx
+xhdpi\ic_launcher.pn
+g	[mipmap-xxxhdpi-v4
+/ic_launcher] D:\app
+ointivahealth\app\sr
+c\main\res\mipmap-xx
+xhdpi\ic_launcher.we
+bp: Error: 
+Duplicate resources
+  [mipmap-xxxhdpi-v4
+/ic_launcher_round] 
+D:\appointivahealth\
+app\src\main\res\mip
+map-xxxhdpi\ic_launc
+her_round.png	[mipma
+p-xxxhdpi-v4/ic_laun
+cher_round] D:\appoi
+ntivahealth\app\src\
+main\res\mipmap-xxxh
+dpi\ic_launcher_roun
+d.webp: Error: 
+Duplicate resources
+
+* Try:
+> Run with 
+--stacktrace option 
+to get the stack 
+trace.
+> Run with --info 
+or --debug option 
+to get more log 
+output.
+> Run with --scan 
+to get full 
+insights from a 
+Build Scan (powered 
+by Develocity).
+> Get more help at h
+ttps://help.gradle.o
+rg.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 9s
+3 actionable tasks: 1 executed, 2 up-to-date

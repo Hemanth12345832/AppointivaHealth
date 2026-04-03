@@ -1,0 +1,130 @@
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:processDebugGoogleServices UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:processDebugNavigationResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:generateDebugRFile UP-TO-DATE
+> Task :app:compileDebugKotlin NO-SOURCE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+
+> Task :app:compileDebugJavaWithJavac FAILED
+D:\appointivahealth\app\src\main\java\com\example\appointivahealth\activities\PrescriptionActivity.java:101: error: cannot find symbol
+                            etPrescriptionContent.setText(existingRecord.getPrescription());
+                                                                        ^
+  symbol:   method getPrescription()
+  location: variable existingRecord of type MedicalRecord
+D:\appointivahealth\app\src\main\java\com\example\appointivahealth\activities\PrescriptionActivity.java:102: error: cannot find symbol
+                            tvPrescriptionPatientName.setText("Patient: " + existingRecord.getPatientName());
+                                                                                          ^
+  symbol:   method getPatientName()
+  location: variable existingRecord of type MedicalRecord
+D:\appointivahealth\app\src\main\java\com\example\appointivahealth\activities\PrescriptionActivity.java:131: error: cannot find symbol
+        record.setId(recordId);
+              ^
+  symbol:   method setId(String)
+  location: variable record of type MedicalRecord
+D:\appointivahealth\app\src\main\java\com\example\appointivahealth\activities\PrescriptionActivity.java:134: error: cannot find symbol
+        record.setAppointmentId(appointmentId);
+              ^
+  symbol:   method setAppointmentId(String)
+  location: variable record of type MedicalRecord
+D:\appointivahealth\app\src\main\java\com\example\appointivahealth\activities\PrescriptionActivity.java:135: error: cannot find symbol
+        record.setPatientName(patientName != null ? patientName : "Unknown");
+              ^
+  symbol:   method setPatientName(patientNam[...]nown")
+  location: variable record of type MedicalRecord
+D:\appointivahealth\app\src\main\java\com\example\appointivahealth\activities\PrescriptionActivity.java:137: error: cannot find symbol
+        record.setPrescription(prescriptionText);
+              ^
+  symbol:   method setPrescription(String)
+  location: variable record of type MedicalRecord
+D:\appointivahealth\app\src\main\java\com\example\appointivahealth\activities\PrescriptionActivity.java:138: error: cannot find symbol
+        record.setDiagnosis("Consultation Diagnosis"); // Generic or extracted if a field existed
+              ^
+  symbol:   method setDiagnosis(String)
+  location: variable record of type MedicalRecord
+D:\appointivahealth\app\src\main\java\com\example\appointivahealth\activities\PrescriptionActivity.java:139: error: cannot find symbol
+        record.setNotes(""); // Blank by default
+              ^
+  symbol:   method setNotes(String)
+  location: variable record of type MedicalRecord
+D:\appointivahealth\app\src\main\java\com\example\appointivahealth\activities\PrescriptionActivity.java:178: error: cannot find symbol
+        String pName = existingRecord != null ? existingRecord.getPatientName() : patientName;
+                                                              ^
+  symbol:   method getPatientName()
+  location: variable existingRecord of type MedicalRecord
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+9 errors
+
+[Incubating] Problems report is available at: file:///D:/appointivahealth/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugJavaWithJavac'.
+> Compilation failed; see the compiler output below.
+  Note: Recompile with -Xlint:deprecation for details.
+  Note: Some input files use or override a deprecated API.
+  D:\appointivahealth\app\src\main\java\com\example\appointivahealth\activities\PrescriptionActivity.java:101: error: cannot find symbol
+                              etPrescriptionContent.setText(existingRecord.getPrescription());
+                                                                          ^
+    symbol:   method getPrescription()
+    location: variable existingRecord of type MedicalRecord
+  D:\appointivahealth\app\src\main\java\com\example\appointivahealth\activities\PrescriptionActivity.java:102: error: cannot find symbol
+                              tvPrescriptionPatientName.setText("Patient: " + existingRecord.getPatientName());
+                                                                                            ^
+    symbol:   method getPatientName()
+    location: variable existingRecord of type MedicalRecord
+  D:\appointivahealth\app\src\main\java\com\example\appointivahealth\activities\PrescriptionActivity.java:131: error: cannot find symbol
+          record.setId(recordId);
+                ^
+    symbol:   method setId(String)
+    location: variable record of type MedicalRecord
+  D:\appointivahealth\app\src\main\java\com\example\appointivahealth\activities\PrescriptionActivity.java:134: error: cannot find symbol
+          record.setAppointmentId(appointmentId);
+                ^
+    symbol:   method setAppointmentId(String)
+    location: variable record of type MedicalRecord
+  D:\appointivahealth\app\src\main\java\com\example\appointivahealth\activities\PrescriptionActivity.java:135: error: cannot find symbol
+          record.setPatientName(patientName != null ? patientName : "Unknown");
+                ^
+    symbol:   method setPatientName(patientNam[...]nown")
+    location: variable record of type MedicalRecord
+  D:\appointivahealth\app\src\main\java\com\example\appointivahealth\activities\PrescriptionActivity.java:137: error: cannot find symbol
+          record.setPrescription(prescriptionText);
+                ^
+    symbol:   method setPrescription(String)
+    location: variable record of type MedicalRecord
+  D:\appointivahealth\app\src\main\java\com\example\appointivahealth\activities\PrescriptionActivity.java:138: error: cannot find symbol
+          record.setDiagnosis("Consultation Diagnosis"); // Generic or extracted if a field existed
+                ^
+    symbol:   method setDiagnosis(String)
+    location: variable record of type MedicalRecord
+  D:\appointivahealth\app\src\main\java\com\example\appointivahealth\activities\PrescriptionActivity.java:139: error: cannot find symbol
+          record.setNotes(""); // Blank by default
+                ^
+    symbol:   method setNotes(String)
+    location: variable record of type MedicalRecord
+  D:\appointivahealth\app\src\main\java\com\example\appointivahealth\activities\PrescriptionActivity.java:178: error: cannot find symbol
+          String pName = existingRecord != null ? existingRecord.getPatientName() : patientName;
+                                                                ^
+    symbol:   method getPatientName()
+    location: variable existingRecord of type MedicalRecord
+  9 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 4s
+8 actionable tasks: 1 executed, 7 up-to-date
